@@ -1,0 +1,197 @@
+lockVersion: 2.0.0
+id: 429e8924-0ca0-455a-9d28-32c84b2c402f
+management:
+  docChecksum: ca55c6f6636880f904b164e65d0e8142
+  docVersion: 2.0.0
+  speakeasyVersion: 1.409.0
+  generationVersion: 2.429.0
+  releaseVersion: 0.0.1
+  configChecksum: e78b720f8c05dc2f5dddefb31c1cb6cd
+features:
+  go:
+    additionalDependencies: 0.1.0
+    core: 3.5.12
+    defaultEnabledRetries: 0.2.0
+    envVarSecurityUsage: 0.3.1
+    flattening: 2.81.1
+    globalSecurity: 2.82.10
+    globalSecurityCallbacks: 0.1.0
+    globalSecurityFlattening: 0.1.0
+    globalServerURLs: 2.82.2
+    intellisenseMarkdownSupport: 0.1.0
+    responseFormat: 0.1.2
+    retries: 2.83.0
+    sdkHooks: 0.1.0
+generatedFiles:
+  - .gitattributes
+  - /models/components/acl.go
+  - /models/components/ancestry.go
+  - /models/components/apperror.go
+  - /models/components/connectedouterservice.go
+  - /models/components/datasetproperties.go
+  - /models/components/filedata.go
+  - /models/components/filemetadata.go
+  - /models/components/filemetadataresponse.go
+  - /models/components/filesourceinfo.go
+  - /models/components/httpmetadata.go
+  - /models/components/legal.go
+  - /models/components/recordversion.go
+  - /models/components/security.go
+  - /models/components/versioninfo.go
+  - /models/operations/deletefilemetadatabyid.go
+  - /models/operations/downloadurl.go
+  - /models/operations/getfilemetadatabyid.go
+  - /models/operations/getlocationfile.go
+  - /models/operations/info.go
+  - /models/operations/livenesscheck.go
+  - /models/operations/postfilesmetadata.go
+  - /models/operations/readinesscheck.go
+  - /models/operations/revokeurl.go
+  - CONTRIBUTING.md
+  - USAGE.md
+  - docs/models/components/acl.md
+  - docs/models/components/ancestry.md
+  - docs/models/components/apperror.md
+  - docs/models/components/connectedouterservice.md
+  - docs/models/components/datasetproperties.md
+  - docs/models/components/endian.md
+  - docs/models/components/extensionproperties.md
+  - docs/models/components/filedata.md
+  - docs/models/components/filemetadata.md
+  - docs/models/components/filemetadataresponse.md
+  - docs/models/components/filesourceinfo.md
+  - docs/models/components/httpmetadata.md
+  - docs/models/components/legal.md
+  - docs/models/components/meta.md
+  - docs/models/components/recordversion.md
+  - docs/models/components/recordversionmeta.md
+  - docs/models/components/security.md
+  - docs/models/components/status.md
+  - docs/models/components/versioninfo.md
+  - docs/models/operations/deletefilemetadatabyidrequest.md
+  - docs/models/operations/deletefilemetadatabyidresponse.md
+  - docs/models/operations/downloadurlrequest.md
+  - docs/models/operations/downloadurlresponse.md
+  - docs/models/operations/getfilemetadatabyidrequest.md
+  - docs/models/operations/getfilemetadatabyidresponse.md
+  - docs/models/operations/getlocationfilerequest.md
+  - docs/models/operations/getlocationfileresponse.md
+  - docs/models/operations/inforequest.md
+  - docs/models/operations/inforesponse.md
+  - docs/models/operations/livenesscheckrequest.md
+  - docs/models/operations/livenesscheckresponse.md
+  - docs/models/operations/option.md
+  - docs/models/operations/postfilesmetadatarequest.md
+  - docs/models/operations/postfilesmetadataresponse.md
+  - docs/models/operations/readinesscheckrequest.md
+  - docs/models/operations/readinesscheckresponse.md
+  - docs/models/operations/revokeurlresponse.md
+  - docs/sdks/fileadminapi/README.md
+  - docs/sdks/filedeliveryapi/README.md
+  - docs/sdks/filelocationapi/README.md
+  - docs/sdks/filemetadataapi/README.md
+  - docs/sdks/healthcheckapi/README.md
+  - docs/sdks/info/README.md
+  - docs/sdks/sdk/README.md
+  - fileadminapi.go
+  - filedeliveryapi.go
+  - filelocationapi.go
+  - filemetadataapi.go
+  - go.mod
+  - healthcheckapi.go
+  - info.go
+  - internal/hooks/hooks.go
+  - internal/utils/contenttype.go
+  - internal/utils/form.go
+  - internal/utils/headers.go
+  - internal/utils/json.go
+  - internal/utils/pathparams.go
+  - internal/utils/queryparams.go
+  - internal/utils/requestbody.go
+  - internal/utils/retries.go
+  - internal/utils/security.go
+  - internal/utils/utils.go
+  - models/operations/options.go
+  - models/sdkerrors/sdkerror.go
+  - retry/config.go
+  - sdk.go
+  - types/bigint.go
+  - types/date.go
+  - types/datetime.go
+  - types/decimal.go
+  - types/pointers.go
+examples:
+  revokeURL:
+    speakeasy-default-revoke-URL:
+      requestBody:
+        application/json: {"key": "<value>", "key1": "<value>", "key2": "<value>"}
+  postFilesMetadata:
+    speakeasy-default-post-files-metadata:
+      parameters:
+        header:
+          data-partition-id: "<id>"
+      requestBody:
+        application/json: {"kind": "osdu:wks:dataset--File.Generic:1.0.0", "legal": {"otherRelevantDataCountries": ["<value>", "<value>", "<value>"]}, "data": {"DatasetProperties": {"FileSourceInfo": {"FileSource": "<value>"}}}}
+      responses:
+        "201":
+          '*/*': "0xC7E1E2BBC6"
+  getFileMetadataById:
+    speakeasy-default-get-file-metadata-by-id:
+      parameters:
+        path:
+          id: "<id>"
+        header:
+          data-partition-id: "<id>"
+      responses:
+        "200":
+          '*/*': "0x2e1F483A2e"
+  deleteFileMetadataById:
+    speakeasy-default-delete-file-metadata-by-id:
+      parameters:
+        path:
+          id: "<id>"
+        header:
+          data-partition-id: "<id>"
+  readinessCheck:
+    speakeasy-default-readiness-check:
+      parameters:
+        header:
+          data-partition-id: "<id>"
+      responses:
+        "200":
+          '*/*': "<value>"
+  livenessCheck:
+    speakeasy-default-liveness-check:
+      parameters:
+        header:
+          data-partition-id: "<id>"
+      responses:
+        "200":
+          '*/*': "<value>"
+  info:
+    speakeasy-default-info:
+      parameters:
+        header:
+          data-partition-id: "<id>"
+  downloadURL:
+    "":
+      parameters:
+        path:
+          id: "<id>"
+        query:
+          expiryTime: "5M"
+        header:
+          data-partition-id: "<id>"
+      responses:
+        "200":
+          '*/*': "0xb639a91d58"
+  getLocationFile:
+    "":
+      parameters:
+        query:
+          expiryTime: "5M"
+        header:
+          data-partition-id: "<id>"
+      responses:
+        "200":
+          '*/*': "0xACeFEEbDd1"
