@@ -4,8 +4,8 @@ package operations
 
 import (
 	"errors"
-	"openapi/internal/utils"
-	"openapi/retry"
+	"github.com/two-ravens/osdu-file-api/internal/utils"
+	"github.com/two-ravens/osdu-file-api/retry"
 	"time"
 )
 

@@ -9,7 +9,7 @@ import (
 	"github.com/cenkalti/backoff/v4"
 	"net/http"
 	"net/url"
-	"openapi/retry"
+	"github.com/two-ravens/osdu-file-api/retry"
 	"strconv"
 	"strings"
 	"time"

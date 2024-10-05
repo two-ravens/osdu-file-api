@@ -3,7 +3,7 @@
 package operations
 
 import (
-	"openapi/models/components"
+	"github.com/two-ravens/osdu-file-api/models/components"
 )
 
 type ReadinessCheckRequest struct {

@@ -6,10 +6,10 @@ import (
 	"context"
 	"fmt"
 	"net/http"
-	"openapi/internal/hooks"
-	"openapi/internal/utils"
-	"openapi/models/components"
-	"openapi/retry"
+	"github.com/two-ravens/osdu-file-api/internal/hooks"
+	"github.com/two-ravens/osdu-file-api/internal/utils"
+	"github.com/two-ravens/osdu-file-api/models/components"
+	"github.com/two-ravens/osdu-file-api/retry"
 	"time"
 )
 

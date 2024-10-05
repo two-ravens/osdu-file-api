@@ -23,7 +23,7 @@ package main
 import(
 	"openapi"
 	"context"
-	"openapi/models/components"
+	"github.com/two-ravens/osdu-file-api/models/components"
 	"log"
 )
 

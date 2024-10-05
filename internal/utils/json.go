@@ -13,7 +13,7 @@ import (
 	"time"
 	"unsafe"
 
-	"openapi/types"
+	"github.com/two-ravens/osdu-file-api/types"
 
 	"github.com/ericlagergren/decimal"
 )

@@ -130,7 +130,7 @@ import (
 	"log"
 	"models/operations"
 	"openapi"
-	"openapi/retry"
+	"github.com/two-ravens/osdu-file-api/retry"
 )
 
 func main() {
@@ -172,7 +172,7 @@ import (
 	"context"
 	"log"
 	"openapi"
-	"openapi/retry"
+	"github.com/two-ravens/osdu-file-api/retry"
 )
 
 func main() {
@@ -231,7 +231,7 @@ import (
 	"errors"
 	"log"
 	"openapi"
-	"openapi/models/sdkerrors"
+	"github.com/two-ravens/osdu-file-api/models/sdkerrors"
 )
 
 func main() {
